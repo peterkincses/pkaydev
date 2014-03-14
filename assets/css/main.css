@@ -1,0 +1,128 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat/montserrat-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-webfont.svg#montserratregular') format('svg'),
+         url('../fonts/montserrat/montserrat-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kameron';
+    src: url('../fonts/kameron/regular/kameron-regular.eot');
+    src: url('../fonts/kameron/regular/kameron-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kameron/regular/kameron-regular.svg#montserratregular') format('svg'),
+         url('../fonts/kameron/regular/kameron-regular.woff') format('woff'),
+         url('../fonts/kameron/regular/kameron-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{ font-family:'Gafata',Arial,sans-serif; color:#6e6e6e; font-size:17px; line-height:1.6; padding-top:70px; }
+.container{ margin:0 auto; padding:0; }
+img{ width:100%; max-width:100%; height:auto; }
+h1,h2,h3,h4,h5,h6{ font-family:'montserrat',Verdana,sans-serif; color:#000000; }
+
+.navbar{ background:url('../images/icons/transparent-bg-black.png'); height:70px; padding:0; }
+.navbar>.container .navbar-brand{ padding: 10px 0 0 15px; width:180px; }
+.navbar .collapse{ padding:0; }
+.navbar-inverse .navbar-nav>li>a{ color:#ffffff; text-transform:uppercase; font-family:'montserrat',Arial, sans-serif;
+     font-size:16px; margin-top:20px; }
+@media (max-width:768px){
+	body{ padding-top:50px; }
+	.navbar{ min-height:50px; height:50px; }
+	.navbar>.container .navbar-brand{ max-width:130px; margin-left:15px; }
+	.navbar .navbar-collapse{ float:left !important; width:100%; text-align:center; border:0; outline:0;
+	                   border:0; margin:0; background:url('../images/icons/transparent-bg-black.png'); }
+	.navbar .navbar-collapse ul{ width: 80%; float:left !important; margin-left:10%; text-align:center; margin-bottom:30px; }
+}
+@media (max-width:768px) and (orientation:landscape){
+}
+
+.homepage{ background:url('../images/photos/large/polynesian-pattern.jpg') no-repeat top center; }
+.homepage .jumbotron{ background:url('../images/icons/transparent-bg-green.png'); color:#ffffff; margin-bottom:0; }
+.homepage .jumbotron h1{ text-transform:uppercase; }
+.homepage .jumbotron p{ width: 70%; margin:0 auto 30px; line-height:1.6; }
+.homepage .jumbotron img{ width:100%; max-width:800px; }
+@media (max-width:768px){
+	.homepage .jumbotron p{ width:90%; }
+}
+@media (max-width:768px){
+	.homepage .jumbotron p{ width:100%; }
+}
+
+.homepage .row,footer{ background:#ffffff; padding:0 0 30px 0; margin:0; }
+.homepage .sectiontitle{ font-size: 35px; margin-bottom:10px; padding:0; text-transform:uppercase; margin-top:0; }
+.homepage .sectionintro{ width:75%; margin:0 auto 30px; color:#666666; }
+
+#portfolio{ padding-top:30px; }
+#portfolio .col-md-4{ margin: 0; overflow: hidden; margin: 0; padding: 0; }
+#portfolio .col-md-4 a img{ width:100%; }
+@media (min-width: 481px){
+	#portfolio .col-md-4{ width: 50%%; float:left; }
+}
+@media (min-width: 768px){
+	#portfolio .col-md-4{ width: 33.33333%%; float:left; }
+}
+
+#aboutme-slides .col-sm-5{ padding:0 30px; }
+#aboutme-slides .col-sm-5 p{ margin-bottom:25px; line-height: 36px; }
+@media (min-width: 661px) and (max-width: 767px){
+	#aboutme-slides .col-sm-7,#aboutme-slides .col-sm-5{ width:50%; float:left; }
+}
+@media (min-width:992px){
+	#aboutme-slides .col-sm-5 p{ line-height: 46px; font-size:24px; }
+}
+
+#testimonials{ padding-bottom:0; }
+#testimonials .row{ padding-top:0; padding-bottom:0; }
+#testimonials .col-sm-6{ padding:0 30px; margin-bottom:30px; }
+#testimonials .col-sm-6 img{ width: 65%; margin-bottom: 20px; }
+#testimonials .col-sm-6 h4{ font-size:20px; margin:0; }
+#testimonials .col-sm-6 p{  }
+#testimonials .col-sm-6 .jobtitle{ font-weight:bold; margin-bottom:10px; padding:0 15%; }
+
+#contact{ background:url('../images/icons/contact-bg.png'); padding-top:30px; }
+#contact h3, #contact p{ color:#ffffff; margin-bottom:30px; }
+#contact form{ max-width:850px; margin: 0 auto; }
+#contact .row{ background:0; color:#ffffff; }
+#contact .form-group{ border:1px solid #ffffff; padding:0; }
+#contact label.form-control{ float:left; display:inline-block; margin:0; width:25%; font-weight:normal; font-size:15px; 
+                             text-transform:uppercase; border:0; font-family:'montserrat'; padding:7px 0 0; }
+#contact .form-control{ float:left; display:inline-block; border:0; outline:0; background:none; border-left:1px solid #ffffff;
+                        border-radius:0; width:75%; color:#ffffff; font-size:15px; padding-top:6px; margin:0; }
+#contact .form-control:-moz-placeholder { color: #ffffff; }
+#contact .form-control::-moz-placeholder { color: #ffffff; }
+#contact .form-control:-ms-input-placeholder { color: #ffffff; }
+#contact .form-control::-webkit-input-placeholder { color: #ffffff; }
+#contact .col-sm-6{ width:48%; }
+#contact .buttoncont{ border:0; }
+#contact .btn{ float:left; border-radius:0; background:#f8f8f8; text-transform:uppercase; font-weight:bold; 
+               font-family:'montserrat'; padding:6px 0; width:25%; }
+@media (max-width: 767px){
+	#contact .row{ padding-bottom:0; }
+	#contact .col-sm-6,	#contact .col-sm-6.pull-right{ width:90%; margin-left:5%; float:left !important; margin-bottom: 35px; }
+}
+@media (max-width: 480px){
+	#contact label.form-control{ font-size:13px; padding-top:10px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
