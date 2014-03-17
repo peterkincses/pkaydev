@@ -101,6 +101,18 @@ function readyFn( jQuery ) {
 				    }, 400);
 				});
 		    });
+		    
+		    portfolioitem.click(function(){
+		    	var datatarget= $(this).attr('data-target');
+		    	var spinner = $(this).find('.spinner');
+		    	if(datatarget)
+		    	   spinner.animate({'width':'30px','height':'30px'},500,function(){
+		    	   	  setTimeout(function(){ window.location = datatarget; }, 1500);
+		    	   });
+		    	   	  //window.location = datatarget;
+		    	  
+		    	   
+		    });
        }
 		
 	}
