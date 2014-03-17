@@ -106,11 +106,12 @@ function readyFn( jQuery ) {
 		    portfolioitem.click(function(){
 		    	var datatarget= $(this).attr('data-target');
 		    	var spinner = $(this).find('.spinner');
-		    	if(datatarget)
+		    	if(datatarget){
 		    	   spinner.animate({'width':'30px','height':'30px'},500,function(){
 		    	   	  setTimeout(function(){ window.location = datatarget; }, 1500);
 		    	   });
-		    	   	  //window.location = datatarget;
+		    	}
+		    	  
 		    	  
 		    	   
 		    });
@@ -125,6 +126,8 @@ function readyFn( jQuery ) {
             scrollTop: $(href).offset().top - 75
         }, 500, function () {
             window.location.hash = href;
+            $('.navbar-collapse').removeClass('in');
+            $('.navbar-collapse').addClass('collapse');
         });
         return false;
     });
