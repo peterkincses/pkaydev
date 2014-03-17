@@ -59,6 +59,53 @@ function readyFn( jQuery ) {
 	}
 	getAboutMeQuotePosition();
 	
+	function getPortfolioItemHeight(){
+		
+		var portfolioitem = $('#portfolio .col-md-4');
+	    var total = portfolioitem.length;
+	    var maxHeight = 0;
+	    
+	    
+        
+        if(total > 0){
+        	portfolioitem.each(function() {
+		        maxHeight = $(this).outerHeight() > maxHeight ? $(this).outerHeight() : maxHeight;
+		    }).outerHeight(maxHeight);
+	    
+		    $(window).smartresize(function() {
+			  var maxHeightnew = 0;
+			  portfolioitem.each(function() {
+			  	    $(this).css('height','');
+			  	    $(this).find('a img').css({'height':'','width':'100%'});
+			        maxHeightnew = $(this).outerHeight() > maxHeightnew ? $(this).outerHeight() : maxHeightnew;
+			  }).outerHeight(maxHeightnew);
+	        });
+	    
+		    portfolioitem.hover(function(){
+		    	var portfolioimg = $(this).find('a img');
+		    	var portfolioname = $(this).find('.portfolioname');
+		    	
+		        portfolioname.fadeIn();
+		    	portfolioimg.animate({
+			        width: $('#portfolio .col-md-4').height() * 1.2,
+			        height: $('#portfolio .col-md-4').height() * 1.2
+			    }, 400);
+		    },function(){
+		    	var portfolioimg = $(this).find('a img');
+		    	var portfolioname = $(this).find('.portfolioname');
+		    	
+		    	portfolioname.fadeOut(400,function(){
+		    		portfolioimg.animate({
+				        width: $('#portfolio .col-md-4').height(),
+				        height: $('#portfolio .col-md-4').height()
+				    }, 400);
+				});
+		    });
+       }
+		
+	}
+	getPortfolioItemHeight();
+	
 	$('.navbar a').click(function() {
         var href = $.attr(this, 'href');
         $('body,html').animate({
@@ -68,6 +115,7 @@ function readyFn( jQuery ) {
         });
         return false;
     });
+    
 
 };
 
