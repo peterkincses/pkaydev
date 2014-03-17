@@ -81,7 +81,7 @@ function readyFn( jQuery ) {
 			  }).outerHeight(maxHeightnew);
 	        });
 	    
-		    portfolioitem.hover(function(){
+		    portfolioitem.mouseover(function(){
 		    	var portfolioimg = $(this).find('a img');
 		    	var portfolioname = $(this).find('.portfolioname');
 		    	
@@ -90,7 +90,8 @@ function readyFn( jQuery ) {
 			        width: $('#portfolio .col-md-4').height() * 1.2,
 			        height: $('#portfolio .col-md-4').height() * 1.2
 			    }, 400);
-		    },function(){
+		    });
+		    portfolioitem.mouseleave(function(){
 		    	var portfolioimg = $(this).find('a img');
 		    	var portfolioname = $(this).find('.portfolioname');
 		    	
