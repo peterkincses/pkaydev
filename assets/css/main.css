@@ -61,20 +61,20 @@ h1,h2,h3,h4,h5,h6{ font-family:'montserrat',Verdana,sans-serif; color:#000000; }
 #portfolio{ padding-top:30px; }
 #portfolio .col-md-4{ margin: 0; overflow: hidden; margin: 0; padding: 0; position:relative;  }
 #portfolio .col-md-4 a img{ max-width:120%; }
-#portfolio .portfolioname{ display:block; width:100%; height: 100%; background:#666666; color:#ffffff; text-align:center; position:absolute; 
+#portfolio .portfolioname{ display:none; width:100%; height: 100%; background:#666666; color:#ffffff; text-align:center; position:absolute;
     top:0; left:0; font-family:'montserrat'; text-transform:uppercase; font-size:18px; padding:40% 10%; cursor:pointer; display:none; 
     background:url('../images/icons/transparent-bg-black.png'); }
 #portfolio .not-ready{ padding-top:28%; }
 #portfolio .spinner{ width:0; height:0; margin:10px auto; background:url('../images/icons/spinner_5.gif') no-repeat; display:block; }
 #portfolio .notice{ text-transform:none; font-style:italic; }
 @media (min-width: 481px){
-	#portfolio .col-md-4{ width: 50%%; float:left; }
+	#portfolio .col-md-4{ width: 50%; float:left; }
 }
 @media (min-width: 768px){
-	#portfolio .col-md-4{ width: 33.33333%%; float:left; }
+	#portfolio .col-md-4{ width: 33.33333%; float:left; }
 }
-
-#aboutme-slides .col-sm-5{ padding:0 30px; }
+#aboutme-slides .col-sm-7 {  float: none; margin: 0 auto; }
+#aboutme-slides .col-sm-5{ padding:0 30px; display: none; }
 #aboutme-slides .col-sm-5 p{ margin-bottom:25px; line-height: 36px; }
 @media (min-width: 661px) and (max-width: 767px){
 	#aboutme-slides .col-sm-7,#aboutme-slides .col-sm-5{ width:50%; float:left; }

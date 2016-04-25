@@ -57,7 +57,7 @@ function readyFn( jQuery ) {
 		 });
 		
 	}
-	getAboutMeQuotePosition();
+	//getAboutMeQuotePosition();
 	
 	function getPortfolioItemHeight(){
 		
@@ -111,9 +111,9 @@ function readyFn( jQuery ) {
 		    	   	  setTimeout(function(){ window.location = datatarget; }, 1500);
 		    	   });
 		    	}
-		    	  
-		    	  
-		    	   
+
+
+
 		    });
        }
 		
